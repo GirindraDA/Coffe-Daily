@@ -16,13 +16,43 @@
             <a href="#">Home</a>
             <a href="#about">About Us</a>
             <a href="#menu">Menu</a>
+            <a href="#products">Products</a>
             <a href="#contact">Contact</a>
         </div>
         <div class="navbar-extra">
-            <a href="#" id="search"><i data-feather="search"></i></a>
-            <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+            <a href="#" id="search-button"><i data-feather="search"></i></a>
+            <a href="#" id="shopping-cart-button"><i data-feather="shopping-cart"></i></a>
             <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
         </div>
+        <!-- Search form -->
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="search here ...">
+            <label for="search-box"><i data-feather="search"></i></label>
+        </div>
+        <!-- Shopping start -->
+        <div class="shopping-cart">
+            <div class="cart-item">
+                <img src="images/product.jpg" alt="gambar">
+                <div class="item-detail">
+                    <h3>Product 1</h3>
+                    <div class="item-price">
+                        Rp. 30.000
+                    </div>
+                </div>
+                <i data-feather="trash-2" class="remove-item"></i>
+            </div>
+            <div class="cart-item">
+                <img src="images/product.jpg" alt="gambar">
+                <div class="item-detail">
+                    <h3>Product 2</h3>
+                    <div class="item-price">
+                        Rp. 32.000
+                    </div>
+                </div>
+                <i data-feather="trash-2" class="remove-item"></i>
+            </div>
+        </div>
+
     </nav>    
     <!-- Hero -->
     <section id="home" class="hero">
@@ -47,7 +77,7 @@
                     Welcome to our sanctuary of coffee exploration, where every bean holds a story and every cup is a voyage of discovery. Immerse yourself in our world of passion and dedication as we traverse the diverse landscapes of coffee culture, from the sun-drenched plantations of Latin America to the bustling coffeehouses of Europe.
                 </p>
                 <p>
-                    Join our global community united by a love for the aromatic brew, and allow us to be your guides as we unlock the secrets of flavor, origin, and craftsmanship. Together, let's embark on an unforgettable odyssey through the rich and intricate tapestry of coffee, awakening your senses and enriching your soul with every sip.
+                    Together, let's embark on an unforgettable odyssey through the rich and intricate tapestry of coffee, awakening your senses and enriching your soul with every sip.
                 </p>
             </div>
         </div>
@@ -60,24 +90,77 @@
         </p>
         <div class="row">
             <div class="menu-card">
-                <img src="images/menu.jpg" alt="menu-coffe-daily" class="menu-card-img">
-                <h3 class="menu-card-title">- Expresso</h3>
+                <img src="images/menu-1.png" alt="menu-coffe-daily" class="menu-card-img">
+                <h3 class="menu-card-title">Expresso</h3>
                 <p class="menu-card-price">Rp. 15.000</p>
             </div>
             <div class="menu-card">
-                <img src="images/menu.jpg" alt="menu-coffe-daily" class="menu-card-img">
-                <h3 class="menu-card-title">- Tiramisu</h3>
+                <img src="images/menu-2.png" alt="menu-coffe-daily" class="menu-card-img">
+                <h3 class="menu-card-title">Tiramisu</h3>
                 <p class="menu-card-price">Rp. 14.000</p>
             </div>
             <div class="menu-card">
-                <img src="images/menu.jpg" alt="menu-coffe-daily" class="menu-card-img">
-                <h3 class="menu-card-title">- Mocha Latte</h3>
+                <img src="images/menu-3.png" alt="menu-coffe-daily" class="menu-card-img">
+                <h3 class="menu-card-title">Vanilla Latte</h3>
                 <p class="menu-card-price">Rp. 18.000</p>
             </div>
             <div class="menu-card">
-                <img src="images/menu.jpg" alt="menu-coffe-daily" class="menu-card-img">
-                <h3 class="menu-card-title">- Americano</h3>
+                <img src="images/menu-4.png" alt="menu-coffe-daily" class="menu-card-img">
+                <h3 class="menu-card-title">Frappe Latte</h3>
                 <p class="menu-card-price">Rp. 18.000</p>
+            </div>
+        </div>
+    </section>
+    <!-- Product -->
+    <section id="products" class="products">
+        <h2>Best <span>Products</span></h2>
+        <p>
+           Enjoy the distinctive aroma and captivating flavor of our carefully selected coffee beans. We guarantee an unparalleled coffee experience. Explore the true pleasure in every cup!
+        </p>
+        <div class="row">
+            <div class="product-card">
+                <div class="product-icons">
+                    <a href="#"><i data-feather="shopping-cart"></i></a>
+                    <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
+                </div>
+                <div class="product-image">
+                    <img src="images/product.jpg" alt="Product1">
+                </div>
+                <div class="product-content">
+                    <h3>Coffe Beans Quatro</h3>
+                    <div class="product-stars">
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star"></i>
+                    </div>
+                </div>
+                <div class="product-price">
+                    Rp. 30.000
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-icons">
+                    <a href="#"><i data-feather="shopping-cart"></i></a>
+                    <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
+                </div>
+                <div class="product-image">
+                    <img src="images/product.jpg" alt="Product1">
+                </div>
+                <div class="product-content">
+                    <h3>Coffe Beans Quatro</h3>
+                    <div class="product-stars">
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star"></i>
+                    </div>
+                </div>
+                <div class="product-price">
+                    Rp. 30.000
+                </div>
             </div>
         </div>
     </section>
@@ -125,6 +208,32 @@
             <p>Girindra | &copy; 2024</p>
         </div>
     </footer>
+    <!-- modal box item -->
+    <div id="item-detail-modal" class="modal">
+        <div class="modal-container">
+            <a href="#"><i data-feather="x" class="close-icon"></i></a>
+            <div class="modal-content">
+                <img src="images/product.jpg" alt="gambar detail">
+                <div class="product-content">
+                    <h3>Product 1</h3>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto illo cupiditate voluptatem cumque quo pariatur eaque enim aspernatur incidunt eum!
+                    </p>
+                    <div class="product-stars">
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star" class="star-full"></i>
+                        <i data-feather="star"></i>
+                    </div>
+                    <div class="product-price">
+                        Rp. 30.000
+                    </div>
+                    <a href="#"><i data-feather="shopping-cart"></i><span> Add To Cart</span></a>    
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- feather icons -->
     <script>feather.replace();</script>
