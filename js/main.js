@@ -36,7 +36,8 @@ document.querySelector('#search-button').onclick = (event) => {
     searchBox.focus();
 }
 
-shoppingCartBtn.addEventListener('click', function(){
+shoppingCartBtn.addEventListener('click', function(event){
+    event.preventDefault();
     shoppingCart.classList.toggle('active');
 });
 
